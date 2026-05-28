@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-gold: #D4AF37;
+  --color-primary-light-gold: #F2C94C;
+  --color-primary-dark-gold: #B8860B;
+  --color-background-black: #060606;
+  --color-background-dark: #0F0F0F;
+  --color-background-card: #111111;
+  --color-background-surface: #1A1A1A;
+  --color-text-white: #FFFFFF;
+  --color-text-light-gray: #BDBDBD;
+  --color-text-muted-gray: #8A8A8A;
+  --color-text-gold: #D4AF37;
+  --color-border-light: rgba(255, 255, 255, 0.08);
+  --color-border-gold: rgba(212, 175, 55, 0.4);
+  --color-success-green: #22C55E;
+  --color-danger-red: #EF4444;
+  --color-warning-orange: #F59E0B;
+  --color-info-blue: #3B82F6;
+  --gradient-primary-gold: linear-gradient(
+    135deg,
+    #D4AF37 0%,
+    #F2C94C 100%
+  );
+  --gradient-dark-background: linear-gradient(
+    135deg,
+    #060606 0%,
+    #111111 100%
+  );
+  --gradient-gold-overlay: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.15) 0%,
+    rgba(6, 6, 6, 1) 100%
+  );
+  --shadow-gold-glow: 0px 0px 30px rgba(212, 175, 55, 0.25);
+  --shadow-card-dark: 0px 10px 30px rgba(0, 0, 0, 0.35);
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 20px;
+  --radius-extra-large: 28px;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
