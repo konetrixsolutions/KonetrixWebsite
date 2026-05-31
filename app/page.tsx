@@ -7,6 +7,7 @@ import { About } from "./nav-sections/About";
 import { Services } from "./nav-sections/Services";
 import { Careers } from "./nav-sections/Careers";
 import { ContactUs } from "./nav-sections/Contactus";
+import { Footer } from "./components/Footer";
 
 export default function Page() {
   const [activeSection, setActiveSection] = useState("home");
@@ -55,6 +56,7 @@ export default function Page() {
       <section id="contact">
         <ContactUs />
       </section>
+      <Footer />
     </>
   );
 }
