@@ -14,6 +14,7 @@ html {
   --color-text-white: #FFFFFF;
   --color-text-light-gray: #BDBDBD;
   --color-text-muted-gray: #8A8A8A;
+  --color-text-dark-gray: #4A4A4A;
   --color-text-gold: #D4AF37;
   --color-border-light: rgba(255, 255, 255, 0.08);
   --color-border-gold: rgba(212, 175, 55, 0.4);

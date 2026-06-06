@@ -20,7 +20,7 @@ export const Navbar = ({ activeSection }: NavbarProps) => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-background-black text-white border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-background-black text-white  ">
       <nav className="flex justify-between items-center py-4 px-5 md:px-12">
         <div className="flex items-center">
           <img
@@ -41,7 +41,7 @@ export const Navbar = ({ activeSection }: NavbarProps) => {
         </div>
 
         {/* Large screen */}
-        <div className="hidden md:flex gap-8 font-medium">
+        <div className="hidden md:flex gap-8 md:items-center font-medium">
           {navItems.map((item) => (
             <Link
               key={item.id}
@@ -55,6 +55,9 @@ export const Navbar = ({ activeSection }: NavbarProps) => {
               {item.name}
             </Link>
           ))}
+          <button className="bg-primary-gold text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition">
+            Lets Talk
+          </button>
         </div>
 
         <TiThMenu
@@ -65,7 +68,7 @@ export const Navbar = ({ activeSection }: NavbarProps) => {
 
       {/* Mobile  */}
       {isOpen && (
-        <div className="md:hidden flex flex-col bg-background-black border-t border-white/10">
+        <div className="md:hidden flex flex-col  bg-background-black border-t border-white/10">
           {navItems.map((item) => (
             <Link
               key={item.id}
@@ -80,6 +83,9 @@ export const Navbar = ({ activeSection }: NavbarProps) => {
               {item.name}
             </Link>
           ))}
+          <button className="bg-primary-gold text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition">
+            Lets Talk
+          </button>
         </div>
       )}
     </header>

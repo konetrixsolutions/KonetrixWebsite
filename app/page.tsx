@@ -12,25 +12,47 @@ import { Footer } from "./components/Footer";
 export default function Page() {
   const [activeSection, setActiveSection] = useState("home");
 
+  // useEffect(() => {
+  //   const sections = document.querySelectorAll("section");
+
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           setActiveSection(entry.target.id);
+  //         }
+  //       });
+  //     },
+  //     {
+  //       threshold: 0.5,
+  //     },
+  //   );
+
+  //   sections.forEach((section) => observer.observe(section));
+
+  //   return () => observer.disconnect();
+  // }, []);
+
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        threshold: 0.5,
-      },
-    );
+      sections.forEach((section) => {
+        const top = section.offsetTop - 120;
+        const height = section.clientHeight;
+        const id = section.id;
 
-    sections.forEach((section) => observer.observe(section));
+        if (window.scrollY >= top && window.scrollY < top + height) {
+          setActiveSection(id);
+        }
+      });
+    };
 
-    return () => observer.disconnect();
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
