@@ -60,7 +60,7 @@ export default function Page() {
       <Navbar activeSection={activeSection} />
 
       <section id="home">
-        <HomePage />
+        <HomePage activeSection={activeSection} />
       </section>
 
       <section id="about">

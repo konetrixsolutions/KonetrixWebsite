@@ -37,38 +37,23 @@ export const Footer = () => {
             <h3 className="mb-5 text-lg font-semibold">Quick Links</h3>
 
             <div className="flex flex-col gap-3 text-gray-400">
-              <Link
-                href="#home"
-                className="transition-colors duration-300 hover:text-primary-gold"
-              >
+              <Link href="#home" className="footer-navs">
                 Home
               </Link>
 
-              <Link
-                href="#about"
-                className="transition-colors duration-300 hover:text-primary-gold"
-              >
+              <Link href="#about" className="footer-navs">
                 About Us
               </Link>
 
-              <Link
-                href="#services"
-                className="transition-colors duration-300 hover:text-primary-gold"
-              >
+              <Link href="#services" className="footer-navs">
                 Services
               </Link>
 
-              <Link
-                href="#careers"
-                className="transition-colors duration-300 hover:text-primary-gold"
-              >
+              <Link href="#careers" className="footer-navs">
                 Careers
               </Link>
 
-              <Link
-                href="#contact"
-                className="transition-colors duration-300 hover:text-primary-gold"
-              >
+              <Link href="#contact" className="footer-navs">
                 Contact Us
               </Link>
             </div>
@@ -79,11 +64,11 @@ export const Footer = () => {
             <h3 className="mb-5 text-lg font-semibold">Services</h3>
 
             <div className="flex flex-col gap-3 text-gray-400">
-              <p>Web & Mobile Applications</p>
-              <p>Software Development</p>
-              <p>Cloud Solutions</p>
-              <p>API Integration</p>
-              <p>Support & Maintenance</p>
+              <p className="footer">Web & Mobile Applications</p>
+              <p className="footer">Software Development</p>
+              <p className="footer">Cloud Solutions</p>
+              <p className="footer">API Integration</p>
+              <p className="footer">Support & Maintenance</p>
             </div>
           </div>
 
@@ -92,15 +77,15 @@ export const Footer = () => {
             <h3 className="mb-5 text-lg font-semibold">Contact</h3>
 
             <div className="space-y-3 text-gray-400">
-              <p>📍 India | Remote</p>
+              <p className="footer">📍 India | Remote</p>
 
-              <p>📧 konetrixsolutions@gmail.com</p>
+              <p className="footer">📧 konetrixsolutions@gmail.com</p>
 
               <a
                 href="https://www.linkedin.com/company/konetrix-solutions/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block transition-colors duration-300 hover:text-primary-gold"
+                className="inline-block transition-colors duration-300 text-sm hover:text-primary-gold"
               >
                 🔗 LinkedIn
               </a>

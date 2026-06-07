@@ -1,8 +1,8 @@
-export const HomePage = () => {
+export const HomePage = ({ activeSection }: { activeSection: string }) => {
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
-
+  console.log("activeSection", activeSection);
   return (
     <div className="bg-background-black  -mt-6 px-5 text-white min-h-screen flex items-center relative overflow-hidden">
       {/* Background Gradient Effect */}
@@ -59,9 +59,9 @@ export const HomePage = () => {
                   KONETRIX
                 </h2>
 
-                <p className="text-primary-gold text-lg md:text-2xl tracking-[0.4em] ">
+                <h6 className="text-primary-gold text-lg md:text-2xl tracking-[0.4em] ">
                   SOLUTIONS
-                </p>
+                </h6>
               </div>
 
               <p className="mt-6 text-primary-gold tracking-[0.3em] uppercase font-semibold text-sm md:text-base">
