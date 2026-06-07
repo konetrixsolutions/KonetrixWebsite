@@ -2,6 +2,35 @@
 html {
   scroll-behavior: smooth;
 }
+/* body {
+  font-family: var(--font-inter);
+} */
+
+.footer{
+  font-size:14px;
+  font-weight:500;
+}
+
+.footer-navs{
+transition: color 0.3s ease;
+font-size:14px;
+color: var(--color-text-light-gray);
+}
+
+.footer-navs:hover{
+  color: var(--color-text-gold);
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sora);
+}
 
 @theme {
   --color-primary-gold: #D4AF37;
