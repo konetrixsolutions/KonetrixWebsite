@@ -1,3 +1,8 @@
+import { FaLaptopHouse } from "react-icons/fa";
+import { FaBalanceScale } from "react-icons/fa";
+import { HiOutlineTrendingUp } from "react-icons/hi";
+import { BsPeopleFill } from "react-icons/bs";
+
 export const Careers = () => {
   const opportunities = [
     {
@@ -22,22 +27,22 @@ export const Careers = () => {
     {
       title: "Remote First",
       desc: "Work from anywhere",
-      icon: "☁️",
+      icon: <FaLaptopHouse />,
     },
     {
       title: "Growth Opportunities",
       desc: "Learn and grow with us",
-      icon: "📈",
+      icon: <HiOutlineTrendingUp />,
     },
     {
       title: "Great Culture",
       desc: "Collaborative & friendly",
-      icon: "🤝",
+      icon: <BsPeopleFill />,
     },
     {
       title: "Work-Life Balance",
       desc: "We value your time",
-      icon: "⚖️",
+      icon: <FaBalanceScale />,
     },
   ];
 
@@ -52,7 +57,7 @@ export const Careers = () => {
 
           <h2 className="text-4xl md:text-5xl font-bold mt-4">Join Our Team</h2>
 
-          <p className="text-text-dark-gray mt-5 leading-7">
+          <p className="text-text-dark-gray mt-5 leading-7 text-justify">
             We're always looking to connect with passionate developers,
             designers, and innovators. While we don't have active openings at
             the moment, we'd love to hear from talented individuals who share
@@ -116,8 +121,11 @@ export const Careers = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {benefits.map((item) => (
-            <div key={item.title} className="text-center">
-              <div className="text-4xl mb-4">{item.icon}</div>
+            <div
+              key={item.title}
+              className="text-center flex flex-col items-center"
+            >
+              <div className="text-4xl mb-4 text-primary-gold">{item.icon}</div>
 
               <h4 className="font-semibold">{item.title}</h4>
 

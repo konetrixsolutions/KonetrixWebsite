@@ -19,7 +19,7 @@ export const About = () => {
             className="block md:hidden w-full rounded-2xl"
           />
 
-          <p className="text-sm md:text-base text-text-dark-gray text-justify leading-7">
+          <p className="text-sm md:text-base text-text-dark-gray text-justify  leading-7">
             At Konetrix Solutions, we believe technology should be a catalyst
             for growth, innovation, and transformation. We are a
             technology-driven company focused on helping businesses turn ideas
@@ -59,11 +59,11 @@ export const About = () => {
               label: "Projects Delivered",
             },
             {
-              value: "5+",
+              value: "13+",
               label: "Trusted Clients",
             },
             {
-              value: "4+",
+              value: "6+",
               label: "Core Team Members",
             },
             {
