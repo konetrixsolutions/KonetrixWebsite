@@ -28,7 +28,7 @@ const contactSchema = Yup.object({
 
   message: Yup.string()
     .trim()
-    .min(300, "Message must be at least 300 characters")
+    .min(100, "Message must be at least 100 characters")
     .max(1000, "Message cannot exceed 1000 characters")
     .required("Message is required"),
 });

@@ -96,8 +96,8 @@ const savedContact = await Contact.create({
 
     // Admin Email
     const adminEmailResponse = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "konetichandra123@gmail.com", // testing email
+      from: "Konetrix Solutions <contact@konetrixsolutions.in>",
+      to: "admin@konetrixsolutions.in", 
       replyTo: email,
       subject: `New Contact Request: ${subject}`,
       html: `
@@ -127,8 +127,8 @@ const savedContact = await Contact.create({
 
     // Auto Reply
     const userEmailResponse = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "konetichandra123@gmail.com", // user email
+      from: "support @Konetrix Solutions <support@konetrixsolutions.in>",
+      to: email, // user email
       subject: "We've received your message",
       html: `
         <h2>Thank you for contacting Konetrix Solutions</h2>
