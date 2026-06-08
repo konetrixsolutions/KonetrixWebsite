@@ -28,7 +28,7 @@ export const ContactUs = () => {
           {/* Contact Details */}
           <div className="mt-7 space-y-5">
             <div className="flex items-start gap-4">
-              <div className="text-primary-gold text-xl">✉</div>
+              <div className="text-primary-dark-gold text-xl">✉</div>
 
               <div>
                 <h4 className="font-semibold">Email</h4>

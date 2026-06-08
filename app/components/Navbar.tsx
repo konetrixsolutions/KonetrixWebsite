@@ -9,6 +9,9 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ activeSection }: NavbarProps) => {
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  };
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -55,7 +58,10 @@ export const Navbar = ({ activeSection }: NavbarProps) => {
               {item.name}
             </Link>
           ))}
-          <button className="bg-primary-gold text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition">
+          <button
+            className="bg-primary-gold text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition"
+            onClick={() => scrollToSection("contact")}
+          >
             Lets Talk
           </button>
         </div>
@@ -83,9 +89,9 @@ export const Navbar = ({ activeSection }: NavbarProps) => {
               {item.name}
             </Link>
           ))}
-          <button className="bg-primary-gold text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition">
-            Lets Talk
-          </button>
+          {/* <button className="bg-primary-gold text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition"> */}
+          {/* Lets Talk */}
+          {/* </button> */}
         </div>
       )}
     </header>

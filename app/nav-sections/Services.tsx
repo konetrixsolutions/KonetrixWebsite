@@ -4,6 +4,9 @@ import { GiSmartphone } from "react-icons/gi";
 import { FaDatabase } from "react-icons/fa6";
 
 export const Services = () => {
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  };
   const services = [
     {
       icon: Code2,
@@ -128,7 +131,10 @@ export const Services = () => {
           </p>
         </div>
 
-        <button className="bg-primary-gold text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+        <button
+          className="bg-primary-gold text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition"
+          onClick={() => scrollToSection("contact")}
+        >
           Get In Touch
         </button>
       </div>

@@ -21,13 +21,13 @@ const contactSchema = Yup.object({
   subject: Yup.string()
     .trim()
     .matches(/^[A-Za-z0-9\s.,!?&()'":-]+$/, "Please enter a valid subject")
-    .min(2, "Subject must be at least 20 characters")
-    .max(1000, "Subject cannot exceed 100 characters")
+    .min(20, "Subject must be at least 20 characters")
+    .max(1000, "Subject cannot exceed 1000 characters")
     .required("Subject is required"),
 
   message: Yup.string()
     .trim()
-    .min(3, "Message must be at least 300 characters")
+    .min(300, "Message must be at least 300 characters")
     .max(1000, "Message cannot exceed 1000 characters")
     .required("Message is required"),
 });
