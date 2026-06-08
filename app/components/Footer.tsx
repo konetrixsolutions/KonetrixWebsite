@@ -76,16 +76,38 @@ export const Footer = () => {
           <div>
             <h3 className="mb-5 text-lg font-semibold">Contact</h3>
 
-            <div className="space-y-3 text-gray-400">
+            <div className="contact-info">
               <p className="footer">📍 India | Remote</p>
 
-              <p className="footer">📧 konetrixsolutions@gmail.com</p>
+              <p className="footer-label">General Inquiries</p>
+              <a
+                className="footer-link"
+                href="mailto:contact@konetrixsolutions.in"
+              >
+                📧 contact@konetrixsolutions.in
+              </a>
+
+              <p className="footer-label">Support</p>
+              <a
+                className="footer-link"
+                href="mailto:support@konetrixsolutions.in"
+              >
+                📧 support@konetrixsolutions.in
+              </a>
+
+              <p className="footer-label">Careers</p>
+              <a
+                className="footer-link"
+                href="mailto:careers@konetrixsolutions.in"
+              >
+                📧 careers@konetrixsolutions.in
+              </a>
 
               <a
                 href="https://www.linkedin.com/company/konetrix-solutions/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block transition-colors duration-300 text-sm hover:text-primary-gold"
+                className="footer-link linkedin-link"
               >
                 🔗 LinkedIn
               </a>

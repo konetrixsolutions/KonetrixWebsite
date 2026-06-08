@@ -79,7 +79,7 @@ export const Careers = () => {
         <p className="text-center text-sm md:text-base">
           We may not have active openings right now, but we're always looking to
           connect with passionate developers, designers, and innovators. Share
-          your resume at <b>konetrixsolutions@gmail.com</b>, and we'll get in
+          your resume at <b>careers@konetrixsolutions.in</b>, and we'll get in
           touch when a role matching your skills becomes available.
         </p>
       </div>

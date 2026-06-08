@@ -6,9 +6,41 @@ html {
   font-family: var(--font-inter);
 } */
 
-.footer{
-  font-size:14px;
-  font-weight:500;
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.footer-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+.footer-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ca3af;
+  text-decoration: none;
+  word-break: break-word;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #D4AF37;
+}
+
+.linkedin-link {
+  margin-top: 12px;
 }
 
 .footer-navs{
