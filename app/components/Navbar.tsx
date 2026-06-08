@@ -44,7 +44,7 @@ export const Navbar = ({ activeSection }: NavbarProps) => {
         </div>
 
         {/* Large screen */}
-        <div className="hidden md:flex gap-8 md:items-center font-medium">
+        <div className="hidden lg:flex gap-6 md:items-center font-medium">
           {navItems.map((item) => (
             <Link
               key={item.id}
@@ -68,13 +68,13 @@ export const Navbar = ({ activeSection }: NavbarProps) => {
 
         <TiThMenu
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-2xl"
+          className="lg:hidden text-3xl"
         />
       </nav>
 
       {/* Mobile  */}
       {isOpen && (
-        <div className="md:hidden flex flex-col  bg-background-black border-t border-white/10">
+        <div className="lg:hidden flex flex-col  bg-background-black border-t border-white/10">
           {navItems.map((item) => (
             <Link
               key={item.id}

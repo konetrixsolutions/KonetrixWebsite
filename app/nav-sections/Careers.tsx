@@ -47,7 +47,7 @@ export const Careers = () => {
   ];
 
   return (
-    <div className="min-h-screen mt-26  md:mt-32 px-9 ">
+    <div className=" mt-26  md:mt-20 px-9 ">
       {/* Top Section */}
       <div className="flex flex-col lg:flex-row items-center gap-10">
         <div className="w-full lg:w-1/2">

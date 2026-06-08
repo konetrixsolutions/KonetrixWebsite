@@ -2,7 +2,7 @@ import { ValuesAndTech } from "./components/ValuesandTech";
 
 export const About = () => {
   return (
-    <div className="min-h-screen mt-26  md:mt-32 px-5 ">
+    <div className=" mt-26  md:mt-32 px-5 ">
       <div className="flex flex-col md:flex-row gap-8 items-center md:px-10">
         <div className="w-full md:w-[60%] flex flex-col gap-5">
           <h1 className="text-2xl md:text-3xl font-bold text-primary-gold uppercase">
