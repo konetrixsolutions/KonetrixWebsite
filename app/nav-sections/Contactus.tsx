@@ -34,7 +34,12 @@ export const ContactUs = () => {
 
             <div>
               <h4 className="font-semibold">Email</h4>
-              <p className="text-text-dark-gray">konetrixsolutions@gmail.com</p>
+              <a
+                className="text-text-dark-gray"
+                href="mailto:contact@konetrixsolutions.in"
+              >
+                contact@konetrixsolutions.in
+              </a>
             </div>
           </div>
 
