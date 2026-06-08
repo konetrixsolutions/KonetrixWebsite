@@ -1,9 +1,12 @@
 import ContactForm from "./components/ContactForm";
 import { ToastContainer, toast } from "react-toastify";
+import { MdEmail } from "react-icons/md";
+import { MdLocationOn } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 
 export const ContactUs = () => {
   return (
-    <div className="max-h-screen mt-26  md:mt-32 px-5 mb-95 lg:mb-10 ">
+    <div className=" mt-26  md:mt-32 px-5 mb-14 md:mb-5 lg:mb-10 ">
       <ToastContainer />
 
       <div className="flex flex-col md:flex-row gap-12">
@@ -26,42 +29,37 @@ export const ContactUs = () => {
           </p>
 
           {/* Contact Details */}
-          <div className="mt-7 space-y-5">
-            <div className="flex items-start gap-4">
-              <div className="text-primary-dark-gold text-xl">✉</div>
+          <div className="flex items-start gap-4 mt-4">
+            <MdEmail className="text-primary-gold text-xl mt-1 shrink-0" />
 
-              <div>
-                <h4 className="font-semibold">Email</h4>
-                <p className="text-text-dark-gray">
-                  konetrixsolutions@gmail.com
-                </p>
-              </div>
+            <div>
+              <h4 className="font-semibold">Email</h4>
+              <p className="text-text-dark-gray">konetrixsolutions@gmail.com</p>
             </div>
+          </div>
 
-            <div className="flex items-start gap-4">
-              <div className="text-primary-gold text-xl">📍</div>
+          <div className="flex items-start gap-4 mt-3">
+            <MdLocationOn className="text-primary-gold text-xl mt-1 shrink-0" />
 
-              <div>
-                <h4 className="font-semibold">Location</h4>
-                <p className="text-text-dark-gray">India | Remote</p>
-              </div>
+            <div>
+              <h4 className="font-semibold">Location</h4>
+              <p className="text-text-dark-gray">India | Remote</p>
             </div>
+          </div>
 
-            <div className="flex items-start gap-4">
-              <div className="text-primary-gold text-xl">🔗</div>
+          <div className="flex items-start gap-4 mt-3">
+            <FaLinkedin className="text-primary-gold text-xl mt-1 shrink-0" />
 
-              <div>
-                <h4 className="font-semibold">Connect</h4>
-
-                <a
-                  href="https://www.linkedin.com/company/konetrix-solutions/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-text-dark-gray hover:text-primary-gold transition-colors"
-                >
-                  LinkedIn
-                </a>
-              </div>
+            <div>
+              <h4 className="font-semibold">Connect</h4>
+              <a
+                href="https://www.linkedin.com/company/konetrix-solutions/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-text-dark-gray hover:text-primary-gold transition-colors"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>

@@ -56,7 +56,7 @@ export const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen mt-26  md:mt-32 px-5 ">
+    <div className=" mt-6  md:mt-32 px-5 ">
       <div className="text-center">
         <p className="text-2xl md:text-3xl font-bold text-primary-gold uppercase">
           Our Services
