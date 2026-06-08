@@ -2,9 +2,9 @@ export const HomePage = ({ activeSection }: { activeSection: string }) => {
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
-  console.log("activeSection", activeSection);
+  // console.log("activeSection", activeSection);
   return (
-    <div className="bg-background-black  -mt-6 px-5 text-white min-h-screen flex items-center relative overflow-hidden">
+    <div className="bg-background-black  -mt-18 md:-mt-6 px-5 text-white min-h-screen flex items-center relative overflow-hidden">
       {/* Background Gradient Effect */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute -bottom-32 left-0 w-full h-96 bg-linear-to-r from-transparent via-primary-gold/20 to-transparent blur-3xl" />
@@ -14,7 +14,7 @@ export const HomePage = ({ activeSection }: { activeSection: string }) => {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <p className="text-gray-300 text-lg font-medium">
+            <p className="text-primary-gold text-xl font-medium">
               Build. Scale. Deliver.
             </p>
 
@@ -47,7 +47,7 @@ export const HomePage = ({ activeSection }: { activeSection: string }) => {
           </div>
 
           {/* Right Logo Section */}
-          <div className="w-full lg:w-1/2 flex justify-center">
+          <div className="w-full lg:w-1/2  justify-center md:block hidden">
             <div className="text-center">
               <img
                 src="/K-logo.png"
@@ -63,10 +63,6 @@ export const HomePage = ({ activeSection }: { activeSection: string }) => {
                   SOLUTIONS
                 </h6>
               </div>
-
-              <p className="mt-6 text-primary-gold tracking-[0.3em] uppercase font-semibold text-sm md:text-base">
-                Innovate. Build. Grow.
-              </p>
             </div>
           </div>
         </div>
